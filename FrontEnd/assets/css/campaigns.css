@@ -1,0 +1,171 @@
+.popular_campaigns {
+  padding: 100px 40px;
+  background-color: #FFF8F2;
+}
+
+.popular_campaigns_header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.campaigns_grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.campaign_grid_card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.campaign_grid_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.campaign_grid_image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.campaign_grid_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.campaign_grid_card:hover .campaign_grid_image img {
+  transform: scale(1.1);
+}
+
+.campaign_grid_content {
+  padding: 20px;
+}
+
+.campaign_grid_user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.grid_user_avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #FFD166;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid_user_avatar i {
+  font-size: 16px;
+  color: #000000;
+}
+
+.grid_user_name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1E293B;
+  opacity: 0.8;
+}
+
+.campaign_grid_title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.campaign_grid_progress {
+  margin-bottom: 16px;
+}
+
+.grid_progress_bar {
+  width: 100%;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.grid_progress_fill {
+  height: 100%;
+  background: linear-gradient(90deg, #FF7A59, #FFD166);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.grid_progress_text {
+  font-size: 0.85rem;
+  color: #1E293B;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.campaign_grid_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.grid_days_left {
+  font-size: 0.9rem;
+  color: #1E293B;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.btn_more_details {
+  color: #FF7A59;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.btn_more_details:hover {
+  background-color: #FF7A59;
+  color: #FFFFFF;
+}
+
+.grid_days_left i {
+  color: #FF7A59;
+  font-size: 0.9rem;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .campaigns_grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+
+  .campaign_grid_title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .campaigns_grid {
+    grid-template-columns: 1fr;
+  }
+}
+

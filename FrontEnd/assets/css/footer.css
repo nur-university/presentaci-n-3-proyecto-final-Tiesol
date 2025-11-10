@@ -1,0 +1,134 @@
+.site_footer {
+  background-color: #1E293B;
+  color: #FFFFFF;
+  padding: 60px 40px 20px;
+  margin-top: 100px;
+}
+
+.footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer_brand {
+  padding-right: 20px;
+}
+
+.footer_logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+.footer_description {
+  color: #FFFFFF;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social_link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social_link:hover {
+  background-color: #FF7A59;
+  transform: translateY(-3px);
+}
+
+.footer_section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.footer_title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.footer_links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_links li {
+  margin-bottom: 12px;
+}
+
+.footer_links a {
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.footer_links a:hover {
+  opacity: 1;
+  color: #FFD166;
+  padding-left: 5px;
+}
+
+.footer_bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.footer_bottom p {
+  color: #FFFFFF;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer_brand {
+    padding-right: 0;
+  }
+
+  .footer_social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .site_footer {
+    padding: 40px 24px 20px;
+  }
+
+  .footer_container {
+    gap: 32px;
+  }
+}

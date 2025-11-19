@@ -1,0 +1,182 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #FFFFFF;
+  color: #1E293B;
+  min-height: 90px;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+header a img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.search_container {
+  flex: 1;
+  max-width: 600px;
+  min-width: 200px;
+  margin: 0 20px;
+}
+
+form {
+  display: flex;
+  height: 48px;
+}
+
+.search_container input,
+.search_container button {
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search_container input {
+  flex: 1;
+  padding: 0 16px;
+  border-radius: 8px 0 0 8px;
+  border: 2px solid #f0f0f0;
+  background-color: #FFFFFF;
+}
+
+.search_container input:focus {
+  border-color: #FF7A59;
+}
+
+.search_container button {
+  background-color: #FF7A59;
+  color: #FFFFFF;
+  border-radius: 0 8px 8px 0;
+  padding: 0 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_container button:hover {
+  background-color: #ffc44d;
+}
+
+.btn_registro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #FF7A59;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.btn_registro:hover {
+  background-color: #ff6642;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 122, 89, 0.3);
+}
+
+.login_register_container {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 968px) {
+  header {
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  header a img {
+    height: 40px;
+  }
+
+  .search_container {
+    margin: 0 10px;
+    min-width: 150px;
+  }
+
+  .login_register_container {
+    gap: 10px;
+  }
+
+  .btn_registro {
+    padding: 0 16px;
+    font-size: 14px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    min-height: auto;
+  }
+
+  .logo_container {
+    order: 1;
+  }
+
+  .login_register_container {
+    order: 2;
+  }
+
+  .search_container {
+    order: 3;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 12px 0 0 0;
+  }
+
+  form {
+    height: 44px;
+  }
+
+  .btn_registro {
+    padding: 0 14px;
+    font-size: 13px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 12px;
+  }
+
+  header a img {
+    height: 35px;
+  }
+
+  .login_register_container {
+    gap: 8px;
+  }
+
+  .btn_registro {
+    padding: 0 12px;
+    font-size: 12px;
+    height: 38px;
+  }
+
+  form {
+    height: 40px;
+  }
+
+  .search_container button {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="author" content="Sebastian Alejandro Gonzales Villarroel" />
+  <meta name="description" content="RiseUp es una plataforma de financiación colectiva que conecta creadores innovadores con personas dispuestas a apoyar sus proyectos." />
+  <meta name="theme-color" content="#FF7A59" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nur-university.github.io/presentaci-n-3-proyecto-final-Tiesol/FrontEnd/pages/index.html" />
+  <meta property="og:title" content="RiseUp - Convierte Tus Ideas en Realidad" />
+  <meta property="og:image" content="https://nur-university.github.io/presentaci-n-3-proyecto-final-Tiesol/FrontEnd/assets/images/riseup.svg" />
+  <meta property="og:description" content="RiseUp es una plataforma de financiación colectiva que conecta creadores innovadores con personas dispuestas a apoyar sus proyectos." />
+  
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/header.css" />
+  <link rel="stylesheet" href="../assets/fontsawesome/css/solid.min.css" />
+  <link rel="stylesheet" href="../assets/fontsawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="../assets/fontsawesome/css/brands.min.css" />
+  <link rel="stylesheet" href="./../assets/css/hero.css">
+  <link rel="stylesheet" href="./../assets/css/featured_campaigns.css">
+  <link rel="stylesheet" href="./../assets/css/campaigns.css">
+  <link rel="stylesheet" href="./../assets/css/footer.css">
+  <link rel="icon" href="../assets/images/riseup.svg" type="image/svg+xml">
+  <title>RiseUp</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo_container">
+      <a href="./index.html">
+        <img src="./../assets/images/riseup.svg" alt="Logo RiseUp" />
+      </a>
+    </div>
+
+    <div class="search_container">
+      <form action="#" method="post">
+        <input type="search" name="search" placeholder="Buscar..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+    <div class="login_register_container">
+      <a class="btn_registro" href="./login.html">Iniciar Sesión</a>
+      <a class="btn_registro" href="./register.html">Registrar</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero_content">
+        <div>
+          <h1 class="hero_title">Convierte Tus Ideas en Realidad</h1>
+          <p class="hero_description">
+            RiseUp es una plataforma de financiación colectiva que conecta visionarios, creadores y organizaciones con
+            una comunidad dispuesta a apoyar proyectos innovadores. Aquí, las ideas cobran vida gracias al poder de
+            muchas personas que creen en ellas.
+          </p>
+          <div class="hero_buttons">
+            <a href="#campaigns" class="btn_primary">Explorar Campañas</a>
+            <a href="#how-it-works" class="btn_secondary">Cómo Funciona</a>
+            <a href="./faq.html" class="btn_faq_hero">Ver Preguntas Frecuentes</a>
+          </div>
+        </div>
+        <div class="hero_cards">
+          <div class="card">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Lanza Proyectos</span>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-users"></i>
+            <span>Construye Comunidad</span>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Alcanza Metas</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="how_it_works" id="how-it-works">
+      <h2 class="section_title">Cómo Funciona</h2>
+      <p class="section_subtitle">Los creadores publican sus proyectos con una meta de financiación y un plazo
+        determinado. Los usuarios pueden explorar, evaluar y contribuir a los proyectos que les resulten atractivos.
+        Solo cuando se alcanza la meta establecida, los fondos se liberan al creador del proyecto.</p>
+
+      <div class="steps_container">
+        <div class="step">
+          <div class="step_icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>1. Crea Tu Proyecto</h3>
+          <p>Comparte tu visión, establece tu meta y cuenta tu historia para inspirar a los patrocinadores.</p>
+        </div>
+
+        <div class="step">
+          <div class="step_icon">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <h3>2. Corre La Voz</h3>
+          <p>Promociona tu campaña y construye una comunidad alrededor de tu idea.</p>
+        </div>
+
+        <div class="step">
+          <div class="step_icon">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h3>3. Obtén Financiación</h3>
+          <p>Recibe contribuciones de seguidores que creen en tu proyecto.</p>
+        </div>
+
+        <div class="step">
+          <div class="step_icon">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <h3>4. Hazlo Realidad</h3>
+          <p>Una vez financiado, da vida a tu proyecto y cumple con tu promesa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured_campaigns" id="campaigns">
+  <div class="featured_campaigns_header">
+    <h2 class="section_title">Campañas Populares</h2>
+    <p class="section_subtitle">Descubre los proyectos más destacados de nuestra comunidad</p>
+  </div>
+
+  <div class="carousel_container">
+    <div class="carousel_wrapper">
+      <a href="#" class="carousel_nav carousel_nav_prev">
+        <i class="fa-solid fa-chevron-left"></i> Anterior
+      </a>
+      <a href="#" class="carousel_nav carousel_nav_next">
+        Siguiente <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <div class="carousel_track">
+        <div class="campaign_card">
+          <img src="../assets/images/img-carrusel.jpg" alt="Proyecto 1" class="campaign_bg">
+          <div class="campaign_overlay">
+            <div class="campaign_content">
+              <div class="user_info">
+                <div class="user_avatar">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <span class="user_name">Juan Pérez</span>
+              </div>
+              <h3 class="campaign_title">Nombre de la Campaña</h3>
+              <div class="campaign_progress">
+                <div class="progress_bar">
+                  <div class="progress_fill"></div>
+                </div>
+                <div class="progress_info">
+                  <span class="progress_percentage">75%</span>
+                  <span class="progress_funded">$15,000 de $20,000</span>
+                </div>
+                <a href="campaign-detail.html" class="btn_view_campaign">Ver Campaña</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel_indicators">
+        <button class="indicator active" data-slide="0"></button>
+        <button class="indicator" data-slide="1"></button>
+        <button class="indicator" data-slide="2"></button>
+        <button class="indicator" data-slide="3"></button>
+        <button class="indicator" data-slide="4"></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="popular_campaigns">
+  <div class="popular_campaigns_header">
+    <h2 class="section_title">Campañas Populares</h2>
+    <p class="section_subtitle">Proyectos que están marcando la diferencia</p>
+  </div>
+
+  <div class="campaigns_grid">
+    <div class="campaign_grid_card">
+      <div class="campaign_grid_image">
+        <img src="../assets/images/img-1.jpg" alt="Campaña 1">
+        <span class="campaign_category">Tecnología</span>
+      </div>
+      <div class="campaign_grid_content">
+        <div class="campaign_grid_user">
+          <div class="grid_user_avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span class="grid_user_name">Juan Pérez</span>
+        </div>
+        <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+        <div class="campaign_grid_progress">
+          <div class="grid_progress_bar">
+            <div class="grid_progress_fill"></div>
+          </div>
+          <p class="grid_progress_text">$100,000 de $500,000 | 70% financiado</p>
+        </div>
+        <div class="campaign_grid_footer">
+          <span class="grid_days_left">
+            <i class="fa-solid fa-clock"></i> 30 días restantes
+          </span>
+          <a href="campaign-detail.html" class="btn_more_details">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign_grid_card">
+      <div class="campaign_grid_image">
+        <img src="../assets/images/img-2.jpg" alt="Campaña 2">
+        <span class="campaign_category">Arte</span>
+      </div>
+      <div class="campaign_grid_content">
+        <div class="campaign_grid_user">
+          <div class="grid_user_avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span class="grid_user_name">Juan Pérez</span>
+        </div>
+        <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+        <div class="campaign_grid_progress">
+          <div class="grid_progress_bar">
+            <div class="grid_progress_fill""></div>
+          </div>
+          <p class="grid_progress_text">$425,000 de $500,000 | 85% financiado</p>
+        </div>
+        <div class="campaign_grid_footer">
+          <span class="grid_days_left">
+            <i class="fa-solid fa-clock"></i> 15 días restantes
+          </span>
+          <a href="#" class="btn_more_details">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign_grid_card">
+      <div class="campaign_grid_image">
+        <img src="../assets/images/img-3.jpg" alt="Campaña 3">
+        <span class="campaign_category">Educación</span>
+      </div>
+      <div class="campaign_grid_content">
+        <div class="campaign_grid_user">
+          <div class="grid_user_avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span class="grid_user_name">Juan Pérez</span>
+        </div>
+        <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+        <div class="campaign_grid_progress">
+          <div class="grid_progress_bar">
+            <div class="grid_progress_fill"></div>
+          </div>
+          <p class="grid_progress_text">$225,000 de $500,000 | 45% financiado</p>
+        </div>
+        <div class="campaign_grid_footer">
+          <span class="grid_days_left">
+            <i class="fa-solid fa-clock"></i> 22 días restantes
+          </span>
+          <a href="#" class="btn_more_details">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign_grid_card">
+      <div class="campaign_grid_image">
+        <img src="../assets/images/img-4.jpg" alt="Campaña 4">
+        <span class="campaign_category">Salud</span>
+      </div>
+      <div class="campaign_grid_content">
+        <div class="campaign_grid_user">
+          <div class="grid_user_avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span class="grid_user_name">Juan Pérez</span>
+        </div>
+        <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+        <div class="campaign_grid_progress">
+          <div class="grid_progress_bar">
+            <div class="grid_progress_fill"></div>
+          </div>
+          <p class="grid_progress_text">$460,000 de $500,000 | 92% financiado</p>
+        </div>
+        <div class="campaign_grid_footer">
+          <span class="grid_days_left">
+            <i class="fa-solid fa-clock"></i> 5 días restantes
+          </span>
+          <a href="#" class="btn_more_details">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign_grid_card">
+      <div class="campaign_grid_image">
+        <img src="../assets/images/img-5.jpg" alt="Campaña 5">
+        <span class="campaign_category">Medio Ambiente</span>
+      </div>
+      <div class="campaign_grid_content">
+        <div class="campaign_grid_user">
+          <div class="grid_user_avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span class="grid_user_name">Juan Pérez</span>
+        </div>
+        <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+        <div class="campaign_grid_progress">
+          <div class="grid_progress_bar">
+            <div class="grid_progress_fill"></div>
+          </div>
+          <p class="grid_progress_text">$300,000 de $500,000 | 60% financiado</p>
+        </div>
+        <div class="campaign_grid_footer">
+          <span class="grid_days_left">
+            <i class="fa-solid fa-clock"></i> 18 días restantes
+          </span>
+          <a href="#" class="btn_more_details">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign_grid_card">
+      <div class="campaign_grid_image">
+        <img src="../assets/images/img-6.jpg" alt="Campaña 6">
+        <span class="campaign_category">Música</span>
+      </div>
+      <div class="campaign_grid_content">
+        <div class="campaign_grid_user">
+          <div class="grid_user_avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span class="grid_user_name">Juan Pérez</span>
+        </div>
+        <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+        <div class="campaign_grid_progress">
+          <div class="grid_progress_bar">
+            <div class="grid_progress_fill"></div>
+          </div>
+          <p class="grid_progress_text">$175,000 de $500,000 | 35% financiado</p>
+        </div>
+        <div class="campaign_grid_footer">
+          <span class="grid_days_left">
+            <i class="fa-solid fa-clock"></i> 25 días restantes
+          </span>
+          <a href="#" class="btn_more_details">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site_footer">
+  <div class="footer_container">
+    <div class="footer_section footer_brand">
+      <img src="./../assets/images/riseup.svg" alt="RiseUp Logo" class="footer_logo">
+      <p class="footer_description">
+        Conectando ideas innovadoras con personas que creen en ellas.
+      </p>
+      <div class="footer_social">
+        <a href="#" aria-label="Instagram" class="social_link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="X (Twitter)" class="social_link">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#" aria-label="Facebook" class="social_link">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" aria-label="GitHub" class="social_link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer_section">
+      <h3 class="footer_title">Legal</h3>
+      <ul class="footer_links">
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_section">
+      <h3 class="footer_title">Soporte</h3>
+      <ul class="footer_links">
+        <li><a href="#">Centro de ayuda</a></li>
+        <li><a href="#">Guías para creadores</a></li>
+        <li><a href="mailto:soporte@riseup.com">soporte@riseup.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <p>&copy; 2025 RiseUp. Todos los derechos reservados.</p>
+  </div>
+</footer>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="author" content="Sebastian Alejandro Gonzales Villarroel" />
+  <meta name="description" content="Crea tu cuenta en RiseUp y únete a nuestra comunidad de creadores e inversores." />
+  <meta name="theme-color" content="#FF7A59" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nur-university.github.io/presentaci-n-3-proyecto-final-Tiesol/FrontEnd/pages/register.html" />
+  <meta property="og:title" content="Registro - RiseUp" />
+  <meta property="og:image" content="https://nur-university.github.io/presentaci-n-3-proyecto-final-Tiesol/FrontEnd/assets/images/riseup.svg" />
+  <meta property="og:description" content="Crea tu cuenta en RiseUp y únete a nuestra comunidad de creadores e inversores." />
+  
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Registro - RiseUp</title>
+</head>
+<body class="auth_body">
+  <div class="auth_card">
+    <a href="./index.html" class="auth_logo">
+      <img src="./../assets/images/riseup.svg" alt="RiseUp Logo" />
+    </a>
+    
+    <div class="auth_header">
+      <h1>Crea tu cuenta</h1>
+      <p>Únete a nuestra comunidad de creadores</p>
+    </div>
+
+    <form class="auth_form" action="#" method="post">
+      <div class="form_group">
+        <label for="username">Nombre de usuario</label>
+        <div class="input_wrapper">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="username" name="username" placeholder="tunombre" required>
+        </div>
+      </div>
+
+      <div class="form_group">
+        <label for="email_register">Email</label>
+        <div class="input_wrapper">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" id="email_register" name="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+      </div>
+
+      <div class="form_group">
+        <label for="password_register">Contraseña</label>
+        <div class="input_wrapper">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="password_register" name="password" placeholder="••••••••" required>
+        </div>
+      </div>
+
+      <div class="form_group">
+        <label for="password_confirm">Confirmar contraseña</label>
+        <div class="input_wrapper">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="password_confirm" name="password_confirm" placeholder="••••••••" required>
+        </div>
+      </div>
+
+      <div class="form_options">
+        <label class="checkbox_label">
+          <input type="checkbox" name="terms" required>
+          <span>Acepto los <a href="#">términos y condiciones</a></span>
+        </label>
+      </div>
+
+      <button type="submit" class="btn_auth_primary">Crear Cuenta</button>
+    </form>
+
+    <div class="auth_footer">
+      <p>¿Ya tienes cuenta? <a href="./login.html">Inicia sesión aquí</a></p>
+    </div>
+  </div>
+</body>
+</html>

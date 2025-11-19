@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="author" content="Sebastian Alejandro Gonzales Villarroel" />
+  <meta name="description" content="Explora proyectos de tecnología en RiseUp. Descubre ideas innovadoras que están cambiando el mundo." />
+  <meta name="theme-color" content="#FF7A59" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nur-university.github.io/presentaci-n-3-proyecto-final-Tiesol/FrontEnd/pages/category.html" />
+  <meta property="og:title" content="Tecnología - RiseUp" />
+  <meta property="og:image" content="https://nur-university.github.io/presentaci-n-3-proyecto-final-Tiesol/FrontEnd/assets/images/riseup.svg" />
+  <meta property="og:description" content="Explora proyectos de tecnología en RiseUp. Descubre ideas innovadoras que están cambiando el mundo." />
+  
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/header.css" />
+  <link rel="stylesheet" href="../assets/css/campaigns.css" />
+  <link rel="stylesheet" href="../assets/css/category.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Tecnología - RiseUp</title>
+</head>
+<body>
+  <header>
+    <div class="logo_container">
+      <a href="./index.html">
+        <img src="./../assets/images/riseup.svg" alt="Logo RiseUp" />
+      </a>
+    </div>
+
+    <div class="search_container">
+      <form action="#" method="post">
+        <input type="search" name="search" placeholder="Buscar..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+    <div class="login_register_container">
+      <a class="btn_registro" href="./login.html">Login</a>
+      <a class="btn_registro" href="./register.html">Register</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="category_header">
+      <div class="category_header_content">
+        <h1 class="category_title">Tecnología</h1>
+        <p class="category_description">Descubre proyectos innovadores que están cambiando el mundo de la tecnología</p>
+      </div>
+    </section>
+
+    <section class="filters_section">
+      <div class="filters_container">
+        <div class="filters_left">
+          <button class="filter_btn active">Todos</button>
+          <button class="filter_btn">En progreso</button>
+          <button class="filter_btn">Financiados</button>
+          <button class="filter_btn">Recientes</button>
+        </div>
+        <div class="filters_right">
+          <select class="sort_select">
+            <option value="recent">Más recientes</option>
+            <option value="popular">Más populares</option>
+            <option value="funded">Más financiados</option>
+            <option value="ending">Por terminar</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="category_campaigns">
+      <div class="campaigns_grid">
+        <div class="campaign_grid_card">
+          <div class="campaign_grid_image">
+            <img src="../assets/images/img-1.jpg" alt="Campaña 1">
+            <span class="campaign_category">Tecnología</span>
+          </div>
+          <div class="campaign_grid_content">
+            <div class="campaign_grid_user">
+              <div class="grid_user_avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="grid_user_name">Juan Pérez</span>
+            </div>
+            <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+            <div class="campaign_grid_progress">
+              <div class="grid_progress_bar">
+                <div class="grid_progress_fill"></div>
+              </div>
+              <p class="grid_progress_text">$375,000 de $500,000 | 75% financiado</p>
+            </div>
+            <div class="campaign_grid_footer">
+              <span class="grid_days_left">
+                <i class="fa-solid fa-clock"></i> 15 días restantes
+              </span>
+              <a href="campaign-detail.html" class="btn_more_details">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign_grid_card">
+          <div class="campaign_grid_image">
+            <img src="../assets/images/img-2.jpg" alt="Campaña 2">
+            <span class="campaign_category">Tecnología</span>
+          </div>
+          <div class="campaign_grid_content">
+            <div class="campaign_grid_user">
+              <div class="grid_user_avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="grid_user_name">Juan Pérez</span>
+            </div>
+            <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+            <div class="campaign_grid_progress">
+              <div class="grid_progress_bar">
+                <div class="grid_progress_fill"></div>
+              </div>
+              <p class="grid_progress_text">$300,000 de $500,000 | 60% financiado</p>
+            </div>
+            <div class="campaign_grid_footer">
+              <span class="grid_days_left">
+                <i class="fa-solid fa-clock"></i> 22 días restantes
+              </span>
+              <a href="#" class="btn_more_details">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign_grid_card">
+          <div class="campaign_grid_image">
+            <img src="../assets/images/img-3.jpg" alt="Campaña 3">
+            <span class="campaign_category">Tecnología</span>
+          </div>
+          <div class="campaign_grid_content">
+            <div class="campaign_grid_user">
+              <div class="grid_user_avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="grid_user_name">Juan Pérez</span>
+            </div>
+            <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+            <div class="campaign_grid_progress">
+              <div class="grid_progress_bar">
+                <div class="grid_progress_fill"></div>
+              </div>
+              <p class="grid_progress_text">$425,000 de $500,000 | 85% financiado</p>
+            </div>
+            <div class="campaign_grid_footer">
+              <span class="grid_days_left">
+                <i class="fa-solid fa-clock"></i> 8 días restantes
+              </span>
+              <a href="#" class="btn_more_details">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign_grid_card">
+          <div class="campaign_grid_image">
+            <img src="../assets/images/img-4.jpg" alt="Campaña 4">
+            <span class="campaign_category">Tecnología</span>
+          </div>
+          <div class="campaign_grid_content">
+            <div class="campaign_grid_user">
+              <div class="grid_user_avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="grid_user_name">Juan Pérez</span>
+            </div>
+            <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+            <div class="campaign_grid_progress">
+              <div class="grid_progress_bar">
+                <div class="grid_progress_fill"></div>
+              </div>
+              <p class="grid_progress_text">$225,000 de $500,000 | 45% financiado</p>
+            </div>
+            <div class="campaign_grid_footer">
+              <span class="grid_days_left">
+                <i class="fa-solid fa-clock"></i> 30 días restantes
+              </span>
+              <a href="#" class="btn_more_details">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign_grid_card">
+          <div class="campaign_grid_image">
+            <img src="../assets/images/img-5.jpg" alt="Campaña 5">
+            <span class="campaign_category">Tecnología</span>
+          </div>
+          <div class="campaign_grid_content">
+            <div class="campaign_grid_user">
+              <div class="grid_user_avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="grid_user_name">Juan Pérez</span>
+            </div>
+            <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+            <div class="campaign_grid_progress">
+              <div class="grid_progress_bar">
+                <div class="grid_progress_fill"></div>
+              </div>
+              <p class="grid_progress_text">$460,000 de $500,000 | 92% financiado</p>
+            </div>
+            <div class="campaign_grid_footer">
+              <span class="grid_days_left">
+                <i class="fa-solid fa-clock"></i> 3 días restantes
+              </span>
+              <a href="#" class="btn_more_details">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign_grid_card">
+          <div class="campaign_grid_image">
+            <img src="../assets/images/img-6.jpg" alt="Campaña 6">
+            <span class="campaign_category">Tecnología</span>
+          </div>
+          <div class="campaign_grid_content">
+            <div class="campaign_grid_user">
+              <div class="grid_user_avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="grid_user_name">Juan Pérez</span>
+            </div>
+            <h3 class="campaign_grid_title">Nombre de la Campaña</h3>
+            <div class="campaign_grid_progress">
+              <div class="grid_progress_bar">
+                <div class="grid_progress_fill"></div>
+              </div>
+              <p class="grid_progress_text">$350,000 de $500,000 | 70% financiado</p>
+            </div>
+            <div class="campaign_grid_footer">
+              <span class="grid_days_left">
+                <i class="fa-solid fa-clock"></i> 18 días restantes
+              </span>
+              <a href="#" class="btn_more_details">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="pagination">
+        <button class="pagination_btn" disabled>
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="pagination_btn active">1</button>
+        <button class="pagination_btn">2</button>
+        <button class="pagination_btn">3</button>
+        <span class="pagination_dots">...</span>
+        <button class="pagination_btn">10</button>
+        <button class="pagination_btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <footer class="site_footer">
+  <div class="footer_container">
+    <div class="footer_section footer_brand">
+      <img src="./../assets/images/riseup.svg" alt="RiseUp Logo" class="footer_logo">
+      <p class="footer_description">
+        Conectando ideas innovadoras con personas que creen en ellas.
+      </p>
+      <div class="footer_social">
+        <a href="#" aria-label="Instagram" class="social_link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="X (Twitter)" class="social_link">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#" aria-label="Facebook" class="social_link">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" aria-label="GitHub" class="social_link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer_section">
+      <h3 class="footer_title">Legal</h3>
+      <ul class="footer_links">
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_section">
+      <h3 class="footer_title">Soporte</h3>
+      <ul class="footer_links">
+        <li><a href="#">Centro de ayuda</a></li>
+        <li><a href="#">Guías para creadores</a></li>
+        <li><a href="mailto:soporte@riseup.com">soporte@riseup.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <p>&copy; 2025 RiseUp. Todos los derechos reservados.</p>
+  </div>
+</footer>
+  </main>
+</body>
+</html>

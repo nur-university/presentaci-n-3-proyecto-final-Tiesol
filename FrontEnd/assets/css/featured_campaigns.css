@@ -1,0 +1,256 @@
+.featured_campaigns {
+  padding: 100px 40px;
+  background-color: #FFF8F2;
+}
+
+.featured_campaigns_header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.carousel_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel_wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.carousel_track {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.campaign_card {
+  min-width: 100%;
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+
+.campaign_bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.campaign_card:hover .campaign_bg {
+  transform: scale(1.05);
+}
+
+.campaign_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 41, 59, 0.2) 0%,
+    rgba(30, 41, 59, 0.6) 50%,
+    rgba(30, 41, 59, 0.95) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 48px;
+}
+
+.campaign_content {
+  width: 100%;
+  max-width: 650px;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.user_avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #FFD166;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_avatar i {
+  font-size: 24px;
+  color: #000000;
+}
+
+.user_name,
+.progress_funded {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.user_name {
+  font-size: 1rem;
+}
+
+.campaign_title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.campaign_progress {
+  max-width: 550px;
+}
+
+.progress_bar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.progress_fill {
+  height: 100%;
+  width: 75%;
+  background: linear-gradient(90deg, #FF7A59, #FFD166);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+  box-shadow: 0 0 10px rgba(255, 122, 89, 0.5);
+}
+
+.progress_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress_percentage {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  text-shadow: inherit;
+}
+
+.btn_view_campaign {
+  display: inline-block;
+  background-color: #FF7A59;
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(255, 122, 89, 0.4);
+}
+
+.btn_view_campaign:hover {
+  background-color: #ff6642;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(255, 122, 89, 0.6);
+}
+
+.carousel_nav {
+  position: absolute;
+  top: 24px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+  transition: all 0.3s ease;
+  text-shadow: inherit;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.carousel_nav:hover {
+  color: #FFD166;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.carousel_nav_prev { left: 24px; }
+.carousel_nav_next { right: 24px; }
+
+.carousel_nav i { font-size: 0.9rem; }
+
+.carousel_indicators {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.indicator:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
+.indicator.active {
+  background-color: #FFFFFF;
+  width: 28px;
+  border-radius: 5px;
+}
+
+@media (max-width: 968px) {
+  .campaign_card { height: 500px; }
+  .campaign_overlay { padding: 32px; }
+  .campaign_title { font-size: 2rem; }
+  .btn_view_campaign { padding: 12px 24px; font-size: 0.95rem; }
+  .carousel_nav { font-size: 0.9rem; padding: 6px 12px; }
+  .carousel_nav_prev { left: 16px; }
+  .carousel_nav_next { right: 16px; }
+}
+
+@media (max-width: 640px) {
+  .campaign_card { height: 450px; }
+  .campaign_overlay { padding: 24px; }
+  .campaign_title { font-size: 1.6rem; margin-bottom: 16px; }
+  .user_avatar { width: 40px; height: 40px; }
+  .user_name { font-size: 0.9rem; }
+  .progress_percentage { font-size: 1.2rem; }
+  .progress_funded { font-size: 0.9rem; }
+  .btn_view_campaign { padding: 10px 20px; font-size: 0.9rem; }
+  .carousel_indicators { bottom: 16px; right: 16px; }
+  .carousel_nav {
+    font-size: 0;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+  }
+  .carousel_nav i { font-size: 1rem; }
+  .carousel_nav_prev { left: 12px; }
+  .carousel_nav_next { right: 12px; }
+}
